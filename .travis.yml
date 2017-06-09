@@ -3,7 +3,6 @@ sudo: false
 language: php
 
 php:
-  - 5.6
   - 7.0
   - 7.1
 
@@ -13,15 +12,8 @@ env:
 matrix:
   include:
   - php: 7.1
-    env: WP_TRAVISCI=travis:phpvalidate
-  - php: 7.1
-    env: WP_TRAVISCI=travis:codecoverage
-  - php: 7.1
     env: WP_TRAVISCI=travis:jshint
-  - php: hhvm
-    env: WP_TRAVISCI=travis:phpunit
   allow_failures:
-    - php: hhvm
   fast_finish: true
 
 cache:
