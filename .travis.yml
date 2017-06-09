@@ -20,10 +20,6 @@ matrix:
     env: WP_TRAVISCI=travis:codecoverage
   - php: 7.1
     env: WP_TRAVISCI=travis:jshint
-  - php: 7.1
-    env: WP_TRAVISCI=travis:phpunit WP_VERSION=nightly
-  - php: 7.1
-    env: WP_TRAVISCI=travis:phpunit
   - php: 7.0
     env: WP_TRAVISCI=travis:phpunit
   - php: 5.6
